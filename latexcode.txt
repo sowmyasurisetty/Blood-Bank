@@ -1,0 +1,133 @@
+\documentclass{beamer}
+
+% Theme
+\usetheme{Madrid}
+\usecolortheme[RGB={255,0,0}]{structure}
+\setbeamercolor{alerted text}{fg=red}
+% Packages
+\usepackage{graphicx}
+\usepackage{tikz}
+
+% Title slide
+    \title{BLOOD CONNECT}
+\author{TEAM 2}
+\date{}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+    \begin{tikzpicture}[remember picture,overlay]
+        % Left logo
+        \node[anchor=north west,inner sep=5pt] at (current page.north west) {\includegraphics[height=1cm]{svecwlogo.png}};
+        % Right logo
+        \node[anchor=north east,inner sep=5pt] at (current page.north east) {\includegraphics[height=1cm]{svecwlogo.png}};
+        % College name
+        \node[anchor=north,inner sep=10pt,text width=\textwidth,align=center] at (current page.north) {\Large Shri Vishnu Engineering College For Women};
+        % Table for names, roll numbers, and roles
+        \node[anchor=south,yshift=1cm,inner sep=2pt,text width=10cm,align=center] at (current page.south) {
+            \begin{tabular}{|c|c|c|}
+            \hline
+            Roll Number & Name & Role \\
+            \hline
+            22B01A4582 & P.Navya & Latex \\
+            22B01A45A1 & Sk.Shehanaz & GitLab \\
+            22B01A45A7 & S.sowmya & Database \\
+            22B01A45B7 & V.Sathwika & Latex \\
+            22B01A45C4 & Y.Keerthana & Frontend \\
+            \hline
+            \end{tabular}
+        };
+    \end{tikzpicture}
+\end{frame}
+
+% Slide 2
+\begin{frame}{Problem Statement}
+    \begin{columns}
+        \column{0.6\textwidth}
+        \textbf{\\- Many people urgently need blood in emergencies, but it's hard to find out who has the blood to donate.\\- We need a application that makes it easy to see where blood is available.\\
+}
+    \end{columns}
+\end{frame}
+
+% Slide 3
+\begin{frame}{Abstract}
+    \begin{columns}
+        \column{0.6\textwidth}
+        \textbf{-The solution to the problem of accessing blood availability lies in developing a user-friendly GUI application.\\- Users would be able to search for blood availability based on their need.
+}
+
+        \column{0.4\textwidth}
+        \includegraphics[width=\textwidth]{main.jpeg}
+    \end{columns}
+\end{frame}
+
+% Slide 4
+\begin{frame}{Demo pages}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \includegraphics[width=\textwidth]{donor form.jpeg}
+    \end{columns}
+    \vfill
+    \textbf{\\-This is the form one should fill if he/she wants to donate\\}
+\end{frame}
+
+%slide 5
+\begin{frame}
+    \begin{columns}
+        \column{1.0\textwidth}
+        \includegraphics[width=\textwidth]{searchdonor.jpeg}
+    \end{columns}
+    \vfill
+    \textbf{\\When we click on "search donor" button it will display the drop down list and then the available blood groups and their quantity\\}
+\end{frame}
+
+% Slide 6
+\begin{frame}
+    \begin{columns}
+        \column{1\textwidth}
+        \includegraphics[width=\textwidth]{searchdonor2.jpeg}
+    \end{columns}
+\end{frame}
+
+% Slide 7
+\begin{frame}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \includegraphics[width=\textwidth]{bloodstock.jpeg}
+    \end{columns}
+    \vfill
+    \textbf{\\- Blood groups and quantity of the available blood is displayed here\\}
+\end{frame}
+
+% Slide 8
+\begin{frame}
+    \begin{columns}
+        \column{0.6\textwidth}
+        \includegraphics[width=\textwidth]{donorrecords.jpeg}
+        \vfill
+        \textbf{\\The data related to donors is displayed\\}
+    \end{columns}
+\end{frame}
+
+%slide 9
+\begin{frame}{Slide 3}
+\frametitle{CONCLUSION}
+    \begin{columns}
+        \column{0.8\textwidth}
+        \textbf{In conclusion, our project stands as an intermediary platform, serving as the vital link that connects individuals in need with generous blood donors. }
+\end{columns}
+\end{frame}
+
+%slide 10
+\begin{frame}[t]{Slide 2}
+    \frametitle{Bibliography}
+    \begin{columns}
+        \column{1.0\textwidth}
+        \textbf{- tkinter documentation} \\
+        \textbf{- sqlite documentation}\\
+        \textbf{- \href{https://youtu.be/WpLBpSiGW0k?si=PGuPKpR4vF6OjUYt}{Youtube}}\\
+        \textbf{- ChatGPT}\\
+    \end{columns}
+\end{frame}
+\end{document}
